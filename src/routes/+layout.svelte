@@ -1,6 +1,15 @@
+<script>
+	const pages = ['Home', 'Resume', 'Portfolio', 'Blog', 'Testimonials'];
+</script>
+
 <nav>
-	<a href="/">home</a>
-	<a href="/education">education</a>
+	<ul>
+		{#each pages as page}
+			<li>
+				<a href={page === 'Home' ? '/' : `/${page.toLowerCase()}`}>{page}</a>
+			</li>
+		{/each}
+	</ul>
 </nav>
 
 <slot />
