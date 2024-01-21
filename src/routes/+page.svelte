@@ -9,7 +9,7 @@
 		'gym enthusiast',
 		'plant dad'
 	];
-	let index = 0;
+	let index = roles.length - 1;
 	let currentRole = '';
 
 	/**
@@ -52,6 +52,9 @@
 	<p>
 		I'm a <span id="span-role">{currentRole}</span>
 	</p>
+
+	<!-- TODO: Latest artwork -->
+	<!-- TODO: Latest blog post -->
 </div>
 
 <style>
