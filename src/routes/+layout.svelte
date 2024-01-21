@@ -2,6 +2,10 @@
 	const pages = ['Home', 'Resume', 'Portfolio', 'Blog'];
 </script>
 
+<svelte:head>
+	<title>Tomas Galle</title>
+</svelte:head>
+
 <div class="body-wrapper">
 	<nav>
 		<ul class="navigator">
