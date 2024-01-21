@@ -1,1 +1,0 @@
-<div>Testimonials</div>
