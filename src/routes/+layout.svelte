@@ -4,6 +4,10 @@
 
 <svelte:head>
 	<title>Tomas Galle</title>
+	<meta
+		name="description"
+		content="The personal portfolio website of Tomas Galle, containing info about him, his experiences, his interests, and his contact information."
+	/>
 </svelte:head>
 
 <div class="body-wrapper">
