@@ -25,14 +25,15 @@
 </div>
 
 <style>
-	.body-wrapper {
-		display: flex;
-		flex-direction: column;
-		height: 100vh - 1px;
+	:global(body) {
+		margin: 0;
+		padding: 0;
 	}
 
 	nav {
 		height: 5vh;
+		position: fixed;
+		width: 100%;
 	}
 
 	.navigator {
