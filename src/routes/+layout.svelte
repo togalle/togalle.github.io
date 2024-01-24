@@ -30,6 +30,8 @@
 		padding: 0;
 
 		color: white;
+		font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+		font-weight: normal;
 
 		background-color: #f0f0f0;
 		background-image: linear-gradient(to bottom right, #1e4291, #c01140);
