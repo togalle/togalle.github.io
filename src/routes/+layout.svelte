@@ -28,12 +28,27 @@
 	:global(body) {
 		margin: 0;
 		padding: 0;
+
+		color: white;
+
+		background-color: #f0f0f0;
+		background-image: linear-gradient(to bottom right, #1e4291, #c01140);
+	}
+
+	:global(a) {
+		color: rgb(243, 39, 97);
+		text-decoration: none;
 	}
 
 	nav {
-		height: 5vh;
+		height: 10vh;
 		position: fixed;
 		width: 100%;
+		backdrop-filter: blur(10px);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	.navigator {

@@ -1,6 +1,5 @@
 <script>
 	const pauseTime = 2000; // ms
-
 	const roles = [
 		'software developer',
 		'digital artist',
@@ -9,6 +8,7 @@
 		'gym enthusiast',
 		'plant dad'
 	];
+
 	let index = roles.length - 1;
 	let currentRole = '';
 
@@ -48,10 +48,10 @@
 
 <div class="home-wrapper">
 	<section>
-		<h5>Hi! My name is</h5>
+		<h3>Hi! My name is</h3>
 		<h1>Tomas Galle</h1>
 		<p>
-			I'm a <span id="span-role">{currentRole}</span>
+			I'm a <span id="span-role">{currentRole}</span><span class="blinking-cursor" />
 		</p>
 	</section>
 
@@ -94,6 +94,7 @@
 
 	h1 {
 		margin-top: 0.5vh;
+		font-size: 5em;
 	}
 
 	section {
@@ -101,5 +102,21 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+	}
+
+	#span-role::after {
+		content: '|';
+		display: inline-block;
+		animation: blinkCursor 1s infinite;
+	}
+
+	@keyframes blinkCursor {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
 	}
 </style>
