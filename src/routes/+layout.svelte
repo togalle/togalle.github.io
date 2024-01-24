@@ -1,5 +1,10 @@
 <script>
+	import { onMount } from 'svelte';
 	const pages = ['Home', 'Resume', 'Portfolio', 'Blog'];
+
+	onMount(() => {
+		document.documentElement.lang = 'en';
+	});
 </script>
 
 <svelte:head>
@@ -8,6 +13,12 @@
 		name="description"
 		content="The personal portfolio website of Tomas Galle, containing info about him, his experiences, his interests, and his contact information."
 	/>
+	<meta
+		name="keywords"
+		content="Tomas Galle, portfolio, website, personal, blog, resume, contact"
+	/>
+	<meta name="author" content="Tomas Galle" />
+	<meta http-equiv="Content-Language" content="en, nl" />
 </svelte:head>
 
 <div class="body-wrapper">
