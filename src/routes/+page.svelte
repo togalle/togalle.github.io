@@ -93,7 +93,8 @@
 	}
 
 	h1 {
-		margin-top: 0.5vh;
+		margin-top: 1vh;
+		margin-bottom: 1vh;
 		font-size: 5em;
 	}
 
