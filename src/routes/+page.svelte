@@ -81,15 +81,23 @@
 
 <style>
 	.home-wrapper {
-		flex-grow: 1;
-
 		width: 80vw;
 		text-align: center;
 		margin: auto;
 
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+
+		scroll-snap-type: y mandatory;
+		overflow-y: scroll;
+		height: 100vh;
+
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.home-wrapper::-webkit-scrollbar {
+		display: none;
 	}
 
 	h1 {
@@ -99,10 +107,12 @@
 	}
 
 	section {
-		height: 100vh;
+		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+		scroll-snap-align: center;
 	}
 
 	#span-role::after {
