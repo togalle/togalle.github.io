@@ -1,1 +1,11 @@
-<div>Resume</div>
+<div>Resume: coming soon</div>
+
+<style>
+	div {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
