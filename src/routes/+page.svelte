@@ -48,7 +48,7 @@
 
 <div class="home-wrapper">
 	<section>
-		<h3>Hi! My name is</h3>
+		<b>Hi! My name is</b>
 		<h1>Tomas Galle</h1>
 		<p>
 			I'm a <span id="span-role">{currentRole}</span><span class="blinking-cursor" />
@@ -57,9 +57,8 @@
 
 	<!-- TODO: Latest artwork -->
 	<!-- TODO: Latest blog post -->
-	<!-- TODO: Testimonial -->
 	<section>
-		<h3>Testimonials</h3>
+		<h2>Testimonials</h2>
 		<p>
 			"Tomas is very eager to learn and critically assess his learning. He aims to complete his
 			tasks successfully, always meeting the expectations set for him, and often exceeding them. He
@@ -70,12 +69,10 @@
 		</p>
 		<div class="author">Manu De Buck (co-founder we are)</div>
 	</section>
-	<!-- TODO: Contact info -->
 	<section>
-		<h3>Contact info</h3>
+		<h2>Contact info</h2>
 		<a href={'https://www.linkedin.com/in/tomas-galle-6b4baa164'}>LinkedIn</a>
 		<a href={`mailto:${'tomasgalle2002@gmail.com'}`} target="_blank">Email</a>
-		<a href={`tel:${'+32 479 81 96 29'}`}>Phone</a>
 	</section>
 </div>
 

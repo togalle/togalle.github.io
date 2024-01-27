@@ -15,7 +15,7 @@
 	/>
 	<meta
 		name="keywords"
-		content="Tomas Galle, portfolio, website, personal, blog, resume, contact"
+		content="Tomas Galle, portfolio, website, personal, blog, resume, contact, software developer, software engineer"
 	/>
 	<meta name="author" content="Tomas Galle" />
 	<meta http-equiv="Content-Language" content="en, nl" />
