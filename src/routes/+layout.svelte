@@ -49,11 +49,12 @@
 	}
 
 	:global(a) {
-		color: rgb(243, 39, 97);
+		color: white;
 		text-decoration: none;
 	}
 
 	nav {
+		z-index: 100;
 		height: 10vh;
 		position: fixed;
 		width: 100%;
@@ -64,9 +65,32 @@
 		justify-content: center;
 	}
 
+	ul {
+		list-style-type: none;
+	}
+
 	.navigator {
 		display: flex;
 		justify-content: space-evenly;
 		padding: 0;
+	}
+
+	a {
+		display: inline-block;
+		padding: 2vh;
+		border-radius: 50px;
+		background-color: rgba(85, 208, 227, 0.2);
+		transition:
+			background-color 0.2s ease-in-out,
+			transform 0.2s ease-in-out;
+		box-sizing: border-box;
+	}
+
+	a:hover {
+		transform: scale(1.2);
+		background-color: rgba(85, 208, 227, 0.4);
+		transition:
+			background-color 0.2s ease-in-out,
+			transform 0.2s ease-in-out;
 	}
 </style>

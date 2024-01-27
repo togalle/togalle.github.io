@@ -1,4 +1,6 @@
 <script>
+	import { onMount } from 'svelte';
+
 	const pauseTime = 2000; // ms
 	const roles = [
 		'software developer',
@@ -11,7 +13,9 @@
 
 	let index = roles.length - 1;
 	let currentRole = '';
+	let scrolled = false;
 
+	// Dynamic role typing effect
 	/**
 	 * @param {string} role
 	 */
@@ -44,6 +48,16 @@
 	}
 
 	$: typewriterEffect();
+
+	// Scroll indicator
+	const handleScroll = () => {
+		scrolled = true;
+		window.removeEventListener('scroll', handleScroll);
+	};
+
+	onMount(() => {
+		window.addEventListener('scroll', handleScroll);
+	});
 </script>
 
 <div class="home-wrapper">
@@ -53,6 +67,9 @@
 		<p>
 			I'm a <span id="span-role">{currentRole}</span><span class="blinking-cursor" />
 		</p>
+		{#if !scrolled}
+			<div class="scroll-indicator">↓</div>
+		{/if}
 	</section>
 
 	<!-- TODO: Latest artwork -->
@@ -77,6 +94,36 @@
 </div>
 
 <style>
+	.scroll-indicator {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 1.2em;
+		animation: bounce 2s infinite;
+
+		background-color: rgb(255, 255, 255, 0.2);
+		border-radius: 50%;
+		width: 2vh;
+		height: 2vh;
+	}
+
+	@keyframes bounce {
+		0%,
+		20%,
+		50%,
+		80%,
+		100% {
+			transform: translateX(-50%) translateY(0);
+		}
+		40% {
+			transform: translateX(-50%) translateY(-30px);
+		}
+		60% {
+			transform: translateX(-50%) translateY(-15px);
+		}
+	}
+
 	.home-wrapper {
 		width: 80vw;
 		text-align: center;
@@ -84,10 +131,6 @@
 
 		display: flex;
 		flex-direction: column;
-
-		scroll-snap-type: y mandatory;
-		overflow-y: scroll;
-		height: 100vh;
 
 		-ms-overflow-style: none;
 		scrollbar-width: none;
@@ -110,6 +153,20 @@
 		justify-content: center;
 
 		scroll-snap-align: center;
+		scroll-snap-stop: always;
+		overflow-y: auto;
+	}
+
+	@media (max-width: 768px) {
+		.home-wrapper {
+			scroll-snap-type: y mandatory;
+			overflow-y: scroll;
+			height: 100vh;
+		}
+
+		.scroll-indicator {
+			display: none;
+		}
 	}
 
 	#span-role::after {
