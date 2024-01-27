@@ -93,4 +93,11 @@
 			background-color 0.2s ease-in-out,
 			transform 0.2s ease-in-out;
 	}
+
+	@media (max-width: 768px) {
+		nav {
+			position: absolute;
+			bottom: 0;
+		}
+	}
 </style>
