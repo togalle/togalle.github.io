@@ -5,6 +5,10 @@
 	onMount(() => {
 		document.documentElement.lang = 'en';
 	});
+
+	const openCv = () => {
+		window.open('/CV-eng.pdf', '_blank');
+	};
 </script>
 
 <svelte:head>
@@ -26,7 +30,10 @@
 		<ul class="navigator">
 			{#each pages as page}
 				<li>
-					<a href={page === 'Home' ? '/' : `/${page.toLowerCase()}`}>{page}</a>
+					<a
+						on:click={page === 'Resume' ? openCv : null}
+						href={['Home', 'Resume'].includes(page) ? '/' : `/${page.toLowerCase()}`}>{page}</a
+					>
 				</li>
 			{/each}
 		</ul>
