@@ -3,12 +3,12 @@
 
 	const pauseTime = 2000; // ms
 	const roles = [
-		'software developer',
-		'digital artist',
-		'snowboarder',
-		'pianist',
-		'gym enthusiast',
-		'plant dad'
+		'software developer 💻',
+		'digital artist 🖌️',
+		'snowboarder 🏂',
+		'pianist 🎵',
+		'gym enthusiast 💪',
+		'plant dad 🌱'
 	];
 
 	let index = roles.length - 1;
@@ -147,7 +147,13 @@
 	}
 
 	section {
-		min-height: 100vh;
+		min-height: 80vh;
+
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+		padding-left: 5vw;
+		padding-right: 5vw;
+
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -155,6 +161,9 @@
 		scroll-snap-align: center;
 		scroll-snap-stop: always;
 		overflow-y: auto;
+
+		background-color: rgb(255, 255, 255, 0.1);
+		border-radius: 2rem;
 	}
 
 	@media (max-width: 768px) {
