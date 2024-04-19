@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	const pages = ['Home', 'Resume', 'Portfolio', 'Blog'];
+	const pages = ['Home', 'Resume', 'Portfolio', 'Gallery'];
 
 	onMount(() => {
 		document.documentElement.lang = 'en';
@@ -30,10 +30,13 @@
 		<ul class="navigator">
 			{#each pages as page}
 				<li>
-					<a
-						on:click={page === 'Resume' ? openCv : null}
-						href={['Home', 'Resume'].includes(page) ? '/' : `/${page.toLowerCase()}`}>{page}</a
-					>
+					{#if page === 'Resume'}
+						<a on:click={openCv} href="/">{page}</a>
+					{:else if page === 'Gallery'}
+						<a href="https://tayku.carrd.co/#art" target="_blank">Gallery</a>
+					{:else}
+						<a href={['Home'].includes(page) ? '/' : `/${page.toLowerCase()}`}>{page}</a>
+					{/if}
 				</li>
 			{/each}
 		</ul>
