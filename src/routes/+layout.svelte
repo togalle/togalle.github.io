@@ -34,6 +34,8 @@
 						<a on:click={openCv} href="/">{page}</a>
 					{:else if page === 'Gallery'}
 						<a href="https://tayku.carrd.co/#art" target="_blank">Gallery</a>
+					{:else if page === 'Portfolio'}
+						<a href="https://github.com/togalle?tab=repositories" target="_blank">Portfolio</a>
 					{:else}
 						<a href={['Home'].includes(page) ? '/' : `/${page.toLowerCase()}`}>{page}</a>
 					{/if}

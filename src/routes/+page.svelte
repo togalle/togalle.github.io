@@ -18,7 +18,7 @@
 <div class="home-wrapper">
 	<section>
 		<b>Hi! My name is</b>
-		<h1>Tomas Galle</h1>
+		<h1 class="highlight-name">Tomas Galle</h1>
 		<p>
 			I'm a <TypewriterList />
 		</p>
@@ -130,22 +130,6 @@
 
 		.scroll-indicator {
 			display: none;
-		}
-	}
-
-	#span-role::after {
-		content: '|';
-		display: inline-block;
-		animation: blinkCursor 1s infinite;
-	}
-
-	@keyframes blinkCursor {
-		0%,
-		100% {
-			opacity: 1;
-		}
-		50% {
-			opacity: 0;
 		}
 	}
 </style>

@@ -53,3 +53,21 @@
 </script>
 
 <span id="span-role">{currentRole}</span><span class="blinking-cursor" />
+
+<style>
+	#span-role::after {
+		content: '|';
+		display: inline-block;
+		animation: blinkCursor 1s infinite;
+	}
+
+	@keyframes blinkCursor {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+	}
+</style>
