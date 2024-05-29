@@ -9,7 +9,9 @@
 		'pianist 🎵',
 		'gym enthusiast 💪',
 		'plant dad 🌱',
-		'baker 🍞'
+		'baker 🍞',
+		'gamer 🎮',
+		'animation lover 🎥'
 	];
 
 	let index = roles.length - 1;
