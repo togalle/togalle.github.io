@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	const pages = ['Home', 'Resume', 'Portfolio', 'Gallery'];
+	const pages = ['Resume', 'Portfolio', 'Gallery'];
 
 	onMount(() => {
 		document.documentElement.lang = 'en';
@@ -57,7 +57,7 @@
 		font-weight: normal;
 
 		background-color: #f0f0f0;
-		background-image: linear-gradient(to bottom right, #1e4291, #c01140);
+		background-image: linear-gradient(to bottom right, #0040ca, #ff1856);
 	}
 
 	:global(a) {
