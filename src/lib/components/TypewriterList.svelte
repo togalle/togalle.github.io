@@ -8,7 +8,8 @@
 		'snowboarder 🏂',
 		'pianist 🎵',
 		'gym enthusiast 💪',
-		'plant dad 🌱'
+		'plant dad 🌱',
+		'baker 🍞'
 	];
 
 	let index = roles.length - 1;
