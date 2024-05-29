@@ -19,10 +19,10 @@
 	/>
 	<meta
 		name="keywords"
-		content="Tomas Galle, portfolio, website, personal, blog, resume, contact, software developer, software engineer"
+		content="Tomas Galle, portfolio, website, personal, blog, resume, contact, software developer, software engineer, digital art"
 	/>
 	<meta name="author" content="Tomas Galle" />
-	<meta http-equiv="Content-Language" content="en, nl" />
+	<meta http-equiv="Content-Language" content="en" />
 </svelte:head>
 
 <div class="body-wrapper">
