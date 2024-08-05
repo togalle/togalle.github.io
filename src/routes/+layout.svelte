@@ -57,6 +57,7 @@
 		font-weight: normal;
 
 		background-color: #8e7ab5;
+		/* https://colorhunt.co/palette/8e7ab5b784b7e493b3eea5a6 */
 		/* background-image: linear-gradient(to bottom right, #0040ca, #ff1856); */
 	}
 
