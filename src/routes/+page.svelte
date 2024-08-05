@@ -29,26 +29,42 @@
 
 	<!-- TODO: Latest artwork -->
 	<!-- TODO: Latest blog post -->
-	<section>
-		<h2>Testimonials</h2>
-		<p>
-			"Tomas is very eager to learn and critically assess his learning. He aims to complete his
-			tasks successfully, always meeting the expectations set for him, and often exceeding them. He
-			continues to strive for self-development and is not afraid to seek help and insights from
-			colleagues in the process. In addition to being a good engineer, Tomas is also a great team
-			player and possesses a good set of soft skills — where he consistently demonstrates a
-			willingness to keep growing."
-		</p>
-		<div class="author">Manu De Buck (co-founder we are)</div>
-	</section>
-	<section>
-		<h2>Contact info</h2>
-		<a href={'https://www.linkedin.com/in/tomas-galle-6b4baa164'}>LinkedIn</a>
-		<a href={`mailto:${'tomasgalle2002@gmail.com'}`} target="_blank">Email</a>
-	</section>
+	<div class="flex">
+		<section class="half">
+			<h2>Testimonials</h2>
+			<p>
+				"Tomas is very eager to learn and critically assess his learning. He aims to complete his
+				tasks successfully, always meeting the expectations set for him, and often exceeding them.
+				He continues to strive for self-development and is not afraid to seek help and insights from
+				colleagues in the process. In addition to being a good engineer, Tomas is also a great team
+				player and possesses a good set of soft skills — where he consistently demonstrates a
+				willingness to keep growing."
+			</p>
+			<div class="author">Manu De Buck (co-founder we are)</div>
+		</section>
+		<section class="half">
+			<h2>Contact info</h2>
+			<a href={'https://www.linkedin.com/in/tomas-galle-6b4baa164'}>LinkedIn</a>
+			<a href={`mailto:${'tomasgalle2002@gmail.com'}`} target="_blank">Email</a>
+		</section>
+	</div>
 </div>
 
 <style>
+	.flex {
+		display: flex;
+		justify-content: space-between;
+		min-height: 80vh;
+
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+	}
+
+	.half {
+		flex: 1;
+		margin: 0 10px;
+	}
+
 	.scroll-indicator {
 		position: absolute;
 		bottom: 10px;
