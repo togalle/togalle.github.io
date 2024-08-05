@@ -56,8 +56,8 @@
 		font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 		font-weight: normal;
 
-		background-color: #f0f0f0;
-		background-image: linear-gradient(to bottom right, #0040ca, #ff1856);
+		background-color: #8e7ab5;
+		/* background-image: linear-gradient(to bottom right, #0040ca, #ff1856); */
 	}
 
 	:global(a) {
