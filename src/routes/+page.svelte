@@ -51,18 +51,40 @@
 </div>
 
 <style>
+	@media (max-width: 768px) {
+		.home-wrapper {
+			scroll-snap-type: y mandatory;
+			overflow-y: scroll;
+			height: 100vh;
+		}
+
+		.scroll-indicator {
+			display: none;
+		}
+
+		.flex {
+			flex-direction: column;
+			height: 200vh;
+		}
+		.half {
+			min-height: 80vh;
+
+			margin-top: 10vh;
+			margin-bottom: 10vh;
+		}
+	}
+
 	.flex {
 		display: flex;
 		justify-content: space-between;
-		min-height: 80vh;
-
-		margin-top: 10vh;
-		margin-bottom: 10vh;
 	}
 
 	.half {
 		flex: 1;
 		margin: 0 10px;
+
+		margin-top: 10vh;
+		margin-bottom: 10vh;
 	}
 
 	.scroll-indicator {
@@ -135,17 +157,5 @@
 
 		background-color: rgb(255, 255, 255, 0.1);
 		border-radius: 2rem;
-	}
-
-	@media (max-width: 768px) {
-		.home-wrapper {
-			scroll-snap-type: y mandatory;
-			overflow-y: scroll;
-			height: 100vh;
-		}
-
-		.scroll-indicator {
-			display: none;
-		}
 	}
 </style>
