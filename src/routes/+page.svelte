@@ -5,7 +5,6 @@
 
 	let scrolled = false;
 
-	// Scroll indicator
 	const handleScroll = () => {
 		scrolled = true;
 		window.removeEventListener('scroll', handleScroll);
@@ -45,8 +44,6 @@
 		{/if}
 	</section>
 
-	<!-- TODO: Latest artwork -->
-	<!-- TODO: Latest blog post -->
 	<div class="flex">
 		<section class="half">
 			<h2>Testimonial</h2>
@@ -62,40 +59,29 @@
 		</section>
 		<section class="half">
 			<h2>Contact info</h2>
-			<a href={'https://www.linkedin.com/in/tomas-galle-6b4baa164'} class="button">LinkedIn</a>
-			<a href={`mailto:${'tomasgalle2002@gmail.com'}`} target="_blank" class="button">Email</a>
-
-			<style>
-				.button {
-					padding: 10px 20px;
-					margin: 10px 0;
-					background-color: #0073b1;
-					color: white;
-					text-decoration: none;
-					border-radius: 5px;
-					transition: background-color 0.3s ease;
-					font-weight: bold;
-				}
-
-				.button:hover {
-					background-color: #005582;
-				}
-
-				.button + .button {
-					background-color: #d44638;
-				}
-
-				.button + .button:hover {
-					background-color: #b33627;
-				}
-			</style>
+			<a href={'https://www.linkedin.com/in/tomas-galle-6b4baa164'} class="button linkedin"
+				>LinkedIn</a
+			>
+			<a href={`mailto:${'tomasgalle2002@gmail.com'}`} target="_blank" class="button email">Email</a
+			>
 		</section>
 	</div>
 </div>
 
 <style>
-	.content {
-		max-width: 30vw;
+	/* General Styles */
+	.home-wrapper {
+		width: 80vw;
+		text-align: center;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.home-wrapper::-webkit-scrollbar {
+		display: none;
 	}
 
 	.flex {
@@ -103,6 +89,14 @@
 		justify-content: space-between;
 	}
 
+	.half {
+		flex: 1;
+		margin: 0 10px;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+	}
+
+	/* Main Card Styles */
 	.main-card {
 		display: flex;
 		flex-direction: row;
@@ -110,10 +104,8 @@
 		justify-content: space-evenly;
 	}
 
-	.center {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+	.image-container {
+		display: block;
 	}
 
 	.squircle {
@@ -122,14 +114,17 @@
 		border-radius: 24%;
 	}
 
-	.half {
-		flex: 1;
-		margin: 0 10px;
-
-		margin-top: 10vh;
-		margin-bottom: 10vh;
+	.center {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
+	.content {
+		max-width: 30vw;
+	}
+
+	/* Scroll Indicator Styles */
 	.scroll-indicator {
 		position: absolute;
 		bottom: 10px;
@@ -137,8 +132,7 @@
 		transform: translateX(-50%);
 		font-size: 1.2em;
 		animation: bounce 2s infinite;
-
-		background-color: rgb(255, 255, 255, 0.2);
+		background-color: rgba(255, 255, 255, 0.2);
 		border-radius: 50%;
 		width: 2vh;
 		height: 2vh;
@@ -160,47 +154,34 @@
 		}
 	}
 
-	.home-wrapper {
-		width: 80vw;
-		text-align: center;
-		margin: auto;
-
-		display: flex;
-		flex-direction: column;
-
-		-ms-overflow-style: none;
-		scrollbar-width: none;
+	/* Button Styles */
+	.button {
+		padding: 10px 20px;
+		margin: 10px 0;
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+		font-weight: bold;
 	}
 
-	.home-wrapper::-webkit-scrollbar {
-		display: none;
+	.button.linkedin {
+		background-color: #0073b1;
 	}
 
-	h1 {
-		margin-top: 1vh;
-		margin-bottom: 1vh;
-		font-size: 5em;
+	.button.linkedin:hover {
+		background-color: #005582;
 	}
 
-	section {
-		min-height: 80vh;
-
-		margin-top: 10vh;
-		margin-bottom: 10vh;
-		padding-left: 5vw;
-		padding-right: 5vw;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-
-		scroll-snap-align: center;
-		scroll-snap-stop: always;
-		overflow-y: auto;
-
-		background-color: rgb(255, 255, 255, 0.1);
-		border-radius: 2rem;
+	.button.email {
+		background-color: #d44638;
 	}
+
+	.button.email:hover {
+		background-color: #b33627;
+	}
+
+	/* Responsive Styles */
 	@media (max-width: 1200px) {
 		.home-wrapper {
 			scroll-snap-type: y mandatory;
@@ -224,7 +205,6 @@
 		}
 
 		.main-card {
-			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-around;
@@ -237,5 +217,28 @@
 		.content {
 			max-width: 70vw;
 		}
+	}
+
+	/* Heading Styles */
+	h1 {
+		margin-top: 1vh;
+		margin-bottom: 1vh;
+		font-size: 5em;
+	}
+
+	section {
+		min-height: 80vh;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		scroll-snap-align: center;
+		scroll-snap-stop: always;
+		overflow-y: auto;
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 2rem;
 	}
 </style>
