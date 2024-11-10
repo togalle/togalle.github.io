@@ -55,21 +55,8 @@
 		font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 		font-weight: normal;
 		font-size: calc(15px + 0.390625vw);
-		background: linear-gradient(to bottom right, #0040ca, #ff1856);
-		background-size: 200% 200%;
-		animation: scrollGradient 20s infinite ease;
-	}
-
-	@keyframes scrollGradient {
-		0% {
-			background-position: 0% 0%;
-		}
-		50% {
-			background-position: 100% 100%;
-		}
-		100% {
-			background-position: 0% 0%;
-		}
+		background-color: #8e7ab5;
+		background-image: linear-gradient(to bottom right, #0040ca, #ff1856);
 	}
 
 	:global(a) {
