@@ -55,6 +55,7 @@
 		color: white;
 		font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 		font-weight: normal;
+		font-size: 1.2rem;
 
 		background-color: #8e7ab5;
 		/* https://colorhunt.co/palette/8e7ab5b784b7e493b3eea5a6 */

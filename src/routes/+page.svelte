@@ -17,11 +17,18 @@
 
 <div class="home-wrapper">
 	<section>
-		<b>Hi! My name is</b>
-		<h1 class="highlight-name">Tomas Galle</h1>
-		<p>
-			I'm a <TypewriterList />
-		</p>
+		<div class="flex flex-horizontal">
+			<div>
+				<img src="/images/viking.webp" alt="Portrait of Tomas Galle" class="squircle" />
+			</div>
+			<div class="center">
+				<b>Hi! My name is</b>
+				<h1 class="highlight-name">Tomas Galle</h1>
+				<p>
+					I'm a <TypewriterList />
+				</p>
+			</div>
+		</div>
 		{#if !scrolled}
 			<div class="scroll-indicator">↓</div>
 		{/if}
@@ -77,6 +84,27 @@
 	.flex {
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.flex-horizontal {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.center {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.squircle {
+		width: 20vw;
+		height: 20vw;
+		border-radius: 24%;
+		/* clip-path: path(
+			'M 0.5 0 C 0.776 0 1 0.224 1 0.5 C 1 0.776 0.776 1 0.5 1 C 0.224 1 0 0.776 0 0.5 C 0 0.224 0.224 0 0.5 0 Z'
+		); */
+		object-fit: cover;
 	}
 
 	.half {
