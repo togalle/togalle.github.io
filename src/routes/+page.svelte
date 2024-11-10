@@ -1,6 +1,7 @@
 <script>
 	import TypewriterList from '$lib/components/TypewriterList.svelte';
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
 	let scrolled = false;
 
@@ -17,15 +18,25 @@
 
 <div class="home-wrapper">
 	<section>
-		<div class="flex flex-horizontal">
-			<div>
-				<img src="/images/viking.webp" alt="Portrait of Tomas Galle" class="squircle" />
+		<div class="main-card">
+			<div class="image-container">
+				<img
+					src={'/images/viking.webp'}
+					alt="Portrait of Tomas Galle"
+					class="squircle"
+					transition:fade
+				/>
 			</div>
-			<div class="center">
+			<div class="center content">
 				<b>Hi! My name is</b>
 				<h1 class="highlight-name">Tomas Galle</h1>
 				<p>
 					I'm a <TypewriterList />
+				</p>
+				<p>
+					I'm a computer science student at Ghent University, with a passion for minimal,
+					sustainable and effective software. I'm eager to connect with people and create a positive
+					impact on the world. If you want to know more about me, feel free to send me a message!
 				</p>
 			</div>
 		</div>
@@ -38,7 +49,7 @@
 	<!-- TODO: Latest blog post -->
 	<div class="flex">
 		<section class="half">
-			<h2>Testimonials</h2>
+			<h2>Testimonial</h2>
 			<p>
 				"Tomas is very eager to learn and critically assess his learning. He aims to complete his
 				tasks successfully, always meeting the expectations set for him, and often exceeding them.
@@ -51,34 +62,40 @@
 		</section>
 		<section class="half">
 			<h2>Contact info</h2>
-			<a href={'https://www.linkedin.com/in/tomas-galle-6b4baa164'}>LinkedIn</a>
-			<a href={`mailto:${'tomasgalle2002@gmail.com'}`} target="_blank">Email</a>
+			<a href={'https://www.linkedin.com/in/tomas-galle-6b4baa164'} class="button">LinkedIn</a>
+			<a href={`mailto:${'tomasgalle2002@gmail.com'}`} target="_blank" class="button">Email</a>
+
+			<style>
+				.button {
+					padding: 10px 20px;
+					margin: 10px 0;
+					background-color: #0073b1;
+					color: white;
+					text-decoration: none;
+					border-radius: 5px;
+					transition: background-color 0.3s ease;
+					font-weight: bold;
+				}
+
+				.button:hover {
+					background-color: #005582;
+				}
+
+				.button + .button {
+					background-color: #d44638;
+				}
+
+				.button + .button:hover {
+					background-color: #b33627;
+				}
+			</style>
 		</section>
 	</div>
 </div>
 
 <style>
-	@media (max-width: 768px) {
-		.home-wrapper {
-			scroll-snap-type: y mandatory;
-			overflow-y: scroll;
-			height: 100vh;
-		}
-
-		.scroll-indicator {
-			display: none;
-		}
-
-		.flex {
-			flex-direction: column;
-			height: 200vh;
-		}
-		.half {
-			min-height: 80vh;
-
-			margin-top: 10vh;
-			margin-bottom: 10vh;
-		}
+	.content {
+		max-width: 30vw;
 	}
 
 	.flex {
@@ -86,8 +103,10 @@
 		justify-content: space-between;
 	}
 
-	.flex-horizontal {
+	.main-card {
+		display: flex;
 		flex-direction: row;
+		align-items: center;
 		justify-content: space-evenly;
 	}
 
@@ -101,10 +120,6 @@
 		width: 20vw;
 		height: 20vw;
 		border-radius: 24%;
-		/* clip-path: path(
-			'M 0.5 0 C 0.776 0 1 0.224 1 0.5 C 1 0.776 0.776 1 0.5 1 C 0.224 1 0 0.776 0 0.5 C 0 0.224 0.224 0 0.5 0 Z'
-		); */
-		object-fit: cover;
 	}
 
 	.half {
@@ -185,5 +200,42 @@
 
 		background-color: rgb(255, 255, 255, 0.1);
 		border-radius: 2rem;
+	}
+	@media (max-width: 1200px) {
+		.home-wrapper {
+			scroll-snap-type: y mandatory;
+			overflow-y: scroll;
+			height: 100vh;
+		}
+
+		.scroll-indicator {
+			display: none;
+		}
+
+		.flex {
+			flex-direction: column;
+			height: 200vh;
+		}
+
+		.half {
+			min-height: 80vh;
+			margin-top: 10vh;
+			margin-bottom: 10vh;
+		}
+
+		.main-card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+		}
+
+		.image-container {
+			display: none;
+		}
+
+		.content {
+			max-width: 70vw;
+		}
 	}
 </style>

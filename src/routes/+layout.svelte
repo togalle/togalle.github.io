@@ -59,7 +59,7 @@
 
 		background-color: #8e7ab5;
 		/* https://colorhunt.co/palette/8e7ab5b784b7e493b3eea5a6 */
-		/* background-image: linear-gradient(to bottom right, #0040ca, #ff1856); */
+		background-image: linear-gradient(to bottom right, #0040ca, #ff1856);
 	}
 
 	:global(a) {
@@ -108,7 +108,7 @@
 			transform 0.2s ease-in-out;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 1200px) {
 		nav {
 			position: absolute;
 			bottom: 0;
