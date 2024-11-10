@@ -59,11 +59,8 @@
 		</section>
 		<section class="half">
 			<h2>Contact info</h2>
-			<a href={'https://www.linkedin.com/in/tomas-galle-6b4baa164'} class="button linkedin"
-				>LinkedIn</a
-			>
-			<a href={`mailto:${'tomasgalle2002@gmail.com'}`} target="_blank" class="button email">Email</a
-			>
+			<a href={'https://www.linkedin.com/in/tomas-galle-6b4baa164'} class="button">LinkedIn</a>
+			<a href={`mailto:${'tomasgalle2002@gmail.com'}`} target="_blank" class="button">Email</a>
 		</section>
 	</div>
 </div>
@@ -163,22 +160,11 @@
 		border-radius: 5px;
 		transition: background-color 0.3s ease;
 		font-weight: bold;
-	}
-
-	.button.linkedin {
 		background-color: #0073b1;
 	}
 
-	.button.linkedin:hover {
+	.button:hover {
 		background-color: #005582;
-	}
-
-	.button.email {
-		background-color: #d44638;
-	}
-
-	.button.email:hover {
-		background-color: #b33627;
 	}
 
 	/* Responsive Styles */
