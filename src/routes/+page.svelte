@@ -23,7 +23,7 @@
 					src={'/images/viking.webp'}
 					alt="Portrait of Tomas Galle"
 					class="squircle"
-					transition:fade
+					loading="lazy"
 				/>
 			</div>
 			<div class="center content">
