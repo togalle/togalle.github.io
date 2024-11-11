@@ -198,7 +198,7 @@
 	}
 
 	/* Responsive Styles */
-	@media (max-width: 767px) {
+	@media (max-width: 991px) {
 		.home-wrapper {
 			scroll-snap-type: y mandatory;
 			overflow-y: scroll;
