@@ -24,7 +24,7 @@
 				<p>
 					I'm a <b><TypewriterList /></b>
 				</p>
-				<p>
+				<p class="bio">
 					I'm a computer science student at Ghent University, with a passion for minimal,
 					sustainable and effective software. As you can see, I'm not afraid to get my hands
 					dirty—literally or figuratively! If you want to know more about me, feel free to send me a
@@ -94,11 +94,6 @@
 		margin-bottom: 10vh;
 	}
 
-	h1,
-	h2 {
-		font-family: Verdana, source-sans-pro, sans-serif;
-	}
-
 	/* Main Card Styles */
 	.main-card {
 		display: flex;
@@ -124,7 +119,12 @@
 	}
 
 	.content {
+		max-width: 50vw;
+	}
+
+	.bio {
 		max-width: 40vw;
+		margin: auto;
 	}
 
 	/* Scroll Indicator Styles */
@@ -179,6 +179,7 @@
 		margin-top: 1vh;
 		margin-bottom: 1vh;
 		font-size: 4em;
+		line-height: 1em;
 	}
 
 	section {
@@ -198,7 +199,7 @@
 	}
 
 	/* Responsive Styles */
-	@media (max-width: 1200px) {
+	@media (max-width: 767px) {
 		.home-wrapper {
 			scroll-snap-type: y mandatory;
 			overflow-y: scroll;
@@ -241,6 +242,10 @@
 
 		h1 {
 			font-size: 5em;
+		}
+
+		.bio {
+			max-width: 70vw;
 		}
 	}
 </style>

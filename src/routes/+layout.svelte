@@ -52,7 +52,7 @@
 		margin: 0;
 		padding: 0;
 		color: white;
-		font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+		font-family: 'URW Gothic', Avenir, Montserrat, Corbel, source-sans-pro, sans-serif;
 		font-weight: normal;
 		font-size: calc(15px + 0.390625vw);
 		background-color: #8e7ab5;
@@ -104,7 +104,7 @@
 			transform 0.2s ease-in-out;
 	}
 
-	@media (max-width: 1200px) {
+	@media (max-width: 991px) {
 		nav {
 			position: absolute;
 			bottom: 0;
