@@ -27,10 +27,10 @@
 				/>
 			</div>
 			<div class="center content">
-				<b>Hi! My name is</b>
+				Hi! My name is
 				<h1 class="highlight-name">Tomas Galle</h1>
 				<p>
-					I'm a <TypewriterList />
+					I'm a <b><TypewriterList /></b>
 				</p>
 				<p>
 					I'm a computer science student at Ghent University, with a passion for minimal,
@@ -91,6 +91,11 @@
 		margin: 0 10px;
 		margin-top: 10vh;
 		margin-bottom: 10vh;
+	}
+
+	h1,
+	h2 {
+		font-family: Verdana, source-sans-pro, sans-serif;
 	}
 
 	/* Main Card Styles */
@@ -160,11 +165,34 @@
 		border-radius: 5px;
 		transition: background-color 0.3s ease;
 		font-weight: bold;
-		background-color: #0073b1;
+		background-color: #3fc3a4;
 	}
 
 	.button:hover {
-		background-color: #005582;
+		background-color: #2d9f84;
+	}
+
+	/* Heading Styles */
+	h1 {
+		margin-top: 1vh;
+		margin-bottom: 1vh;
+		font-size: 5em;
+	}
+
+	section {
+		min-height: 80vh;
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		scroll-snap-align: center;
+		scroll-snap-stop: always;
+		overflow-y: auto;
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 2rem;
 	}
 
 	/* Responsive Styles */
@@ -173,6 +201,7 @@
 			scroll-snap-type: y mandatory;
 			overflow-y: scroll;
 			height: 100vh;
+			width: 100vw;
 		}
 
 		.scroll-indicator {
@@ -201,30 +230,11 @@
 		}
 
 		.content {
-			max-width: 70vw;
+			max-width: 90vw;
 		}
-	}
 
-	/* Heading Styles */
-	h1 {
-		margin-top: 1vh;
-		margin-bottom: 1vh;
-		font-size: 5em;
-	}
-
-	section {
-		min-height: 80vh;
-		margin-top: 10vh;
-		margin-bottom: 10vh;
-		padding-left: 5vw;
-		padding-right: 5vw;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		scroll-snap-align: center;
-		scroll-snap-stop: always;
-		overflow-y: auto;
-		background-color: rgba(255, 255, 255, 0.1);
-		border-radius: 2rem;
+		section {
+			background-color: transparent;
+		}
 	}
 </style>

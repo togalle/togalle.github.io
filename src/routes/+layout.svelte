@@ -56,7 +56,7 @@
 		font-weight: normal;
 		font-size: calc(15px + 0.390625vw);
 		background-color: #8e7ab5;
-		background-image: linear-gradient(to bottom right, #0040ca, #ff1856);
+		background-image: linear-gradient(to bottom right, #55c364, #0060ae);
 	}
 
 	:global(a) {
