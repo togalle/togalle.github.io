@@ -1,7 +1,6 @@
 <script>
 	import TypewriterList from '$lib/components/TypewriterList.svelte';
 	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
 
 	let scrolled = false;
 
