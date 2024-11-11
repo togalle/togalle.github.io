@@ -18,14 +18,6 @@
 <div class="home-wrapper">
 	<section>
 		<div class="main-card">
-			<div class="image-container">
-				<img
-					src={'/images/viking.webp'}
-					alt="Portrait of Tomas Galle"
-					class="squircle"
-					loading="lazy"
-				/>
-			</div>
 			<div class="center content">
 				Hi! My name is
 				<h1 class="highlight-name">Tomas Galle</h1>
@@ -34,9 +26,18 @@
 				</p>
 				<p>
 					I'm a computer science student at Ghent University, with a passion for minimal,
-					sustainable and effective software. I'm eager to connect with people and create a positive
-					impact on the world. If you want to know more about me, feel free to send me a message!
+					sustainable and effective software. As you can see, I'm not afraid to get my hands
+					dirty—literally or figuratively! If you want to know more about me, feel free to send me a
+					message!
 				</p>
+			</div>
+			<div class="image-container">
+				<img
+					src={'/images/viking.webp'}
+					alt="Portrait of Tomas Galle"
+					class="squircle"
+					loading="lazy"
+				/>
 			</div>
 		</div>
 		{#if !scrolled}
@@ -123,7 +124,7 @@
 	}
 
 	.content {
-		max-width: 30vw;
+		max-width: 40vw;
 	}
 
 	/* Scroll Indicator Styles */
@@ -138,6 +139,7 @@
 		border-radius: 50%;
 		width: 2vh;
 		height: 2vh;
+		font-size: 0.8em;
 	}
 
 	@keyframes bounce {
@@ -176,7 +178,7 @@
 	h1 {
 		margin-top: 1vh;
 		margin-bottom: 1vh;
-		font-size: 5em;
+		font-size: 4em;
 	}
 
 	section {
@@ -235,6 +237,10 @@
 
 		section {
 			background-color: transparent;
+		}
+
+		h1 {
+			font-size: 5em;
 		}
 	}
 </style>

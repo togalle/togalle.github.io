@@ -55,6 +55,12 @@
 <span id="span-role">{currentRole}</span><span class="blinking-cursor" />
 
 <style>
+	#span-role {
+		display: inline-block;
+		height: 1.5em;
+		line-height: 1.5em;
+	}
+
 	#span-role::after {
 		content: '|';
 		display: inline-block;
