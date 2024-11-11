@@ -23,6 +23,9 @@
 	/>
 	<meta name="author" content="Tomas Galle" />
 	<meta http-equiv="Content-Language" content="en" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+	</style>
 </svelte:head>
 
 <div class="body-wrapper">
@@ -52,7 +55,7 @@
 		margin: 0;
 		padding: 0;
 		color: white;
-		font-family: 'URW Gothic', Avenir, Montserrat, Corbel, source-sans-pro, sans-serif;
+		font-family: 'Poppins', 'URW Gothic', Avenir, Montserrat, Corbel, source-sans-pro, sans-serif;
 		font-weight: normal;
 		font-size: calc(15px + 0.390625vw);
 		background-color: #8e7ab5;
