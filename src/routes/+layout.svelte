@@ -22,15 +22,14 @@
 		content="Tomas Galle, portfolio, website, personal, blog, resume, contact, software developer, software engineer, digital art"
 	/>
 	<meta name="author" content="Tomas Galle" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+		rel="stylesheet"
+	/>
 	<meta http-equiv="Content-Language" content="en" />
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 	</style>
-	<link
-		rel="stylesheet"
-		type="text/css"
-		href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-	/>
 </svelte:head>
 
 <div class="body-wrapper">
