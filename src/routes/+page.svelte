@@ -38,15 +38,15 @@
 					-->
 
 				<p class="skill-icons">
-					<img alt="React" src="https://skillicons.dev/icons?i=react" />
-					<img alt="Svelte" src="https://skillicons.dev/icons?i=svelte" />
-					<img alt="Node.js" src="https://skillicons.dev/icons?i=nodejs" />
-					<img alt="Docker" src="https://skillicons.dev/icons?i=docker" />
-					<img alt="Kubernetes" src="https://skillicons.dev/icons?i=kubernetes" />
-					<img alt="AWS" src="https://skillicons.dev/icons?i=aws" />
-					<img alt="TensorFlow" src="https://skillicons.dev/icons?i=tensorflow" />
-					<img alt="Linux" src="https://skillicons.dev/icons?i=linux" />
-					<img alt="Bash" src="https://skillicons.dev/icons?i=bash" />
+					<img alt="React" src="https://skillicons.dev/icons?i=react&theme=light" />
+					<img alt="Svelte" src="https://skillicons.dev/icons?i=svelte&theme=light" />
+					<img alt="Node.js" src="https://skillicons.dev/icons?i=nodejs&theme=light" />
+					<img alt="Docker" src="https://skillicons.dev/icons?i=docker&theme=light" />
+					<img alt="Kubernetes" src="https://skillicons.dev/icons?i=kubernetes&theme=light" />
+					<img alt="AWS" src="https://skillicons.dev/icons?i=aws&theme=light" />
+					<img alt="TensorFlow" src="https://skillicons.dev/icons?i=tensorflow&theme=light" />
+					<img alt="Linux" src="https://skillicons.dev/icons?i=linux&theme=light" />
+					<img alt="Bash" src="https://skillicons.dev/icons?i=bash&theme=light" />
 				</p>
 			</div>
 			<div class="image-container">
