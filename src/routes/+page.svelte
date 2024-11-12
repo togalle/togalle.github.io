@@ -61,6 +61,7 @@
 			<h2>Contact info</h2>
 			<a href={'https://www.linkedin.com/in/tomas-galle-6b4baa164'} class="button">LinkedIn</a>
 			<a href={`mailto:${'tomasgalle2002@gmail.com'}`} target="_blank" class="button">Email</a>
+			<a href={`https://t.me/taykuuu`} target="_blank" class="button">Telegram</a>
 		</section>
 	</div>
 </div>
