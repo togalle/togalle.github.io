@@ -30,67 +30,23 @@
 					</span>I'm not afraid to get my hands dirty<span class="mobile-invisible">—literally</span
 					>! Feel free to reach out if you'd like to connect.
 				</p>
-				<p>
-					<!-- 
+				<!-- 
 					frontend: react, svelte, angular 
 					backend: node, fastify
 					inftrastucture: docker, aws, ansible, terraform
 					varia: tensorflow, linux, java, bash
 					-->
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-						alt="React Icon"
-						class="skill-icon"
-						title="React"
-					/>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
-						alt="Svelte Icon"
-						class="skill-icon"
-						title="Svelte"
-					/>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-						alt="Node.js Icon"
-						class="skill-icon"
-						title="Node.js"
-					/>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
-						alt="Docker Icon"
-						class="skill-icon"
-						title="Docker"
-					/>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg"
-						alt="Kubernetes Icon"
-						class="skill-icon"
-						title="Kubernetes"
-					/>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-						alt="AWS Icon"
-						class="skill-icon"
-						title="AWS"
-					/>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
-						alt="Tensorflow Icon"
-						class="skill-icon"
-						title="Tensorflow"
-					/>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-						alt="Linux Icon"
-						class="skill-icon"
-						title="Linux"
-					/>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
-						alt="Bash Icon"
-						class="skill-icon"
-						title="Bash"
-					/>
+
+				<p class="skill-icons">
+					<img alt="React" src="https://skillicons.dev/icons?i=react" />
+					<img alt="Svelte" src="https://skillicons.dev/icons?i=svelte" />
+					<img alt="Node.js" src="https://skillicons.dev/icons?i=nodejs" />
+					<img alt="Docker" src="https://skillicons.dev/icons?i=docker" />
+					<img alt="Kubernetes" src="https://skillicons.dev/icons?i=kubernetes" />
+					<img alt="AWS" src="https://skillicons.dev/icons?i=aws" />
+					<img alt="TensorFlow" src="https://skillicons.dev/icons?i=tensorflow" />
+					<img alt="Linux" src="https://skillicons.dev/icons?i=linux" />
+					<img alt="Bash" src="https://skillicons.dev/icons?i=bash" />
 				</p>
 			</div>
 			<div class="image-container">
@@ -355,17 +311,8 @@
 		}
 	}
 
-	.skill-icon {
-		width: 40px;
-		height: 40px;
-		margin: 5px;
+	.skill-icons > img {
+		margin: 0.2vw;
 		transition: transform 0.2s ease;
-		padding: 5px;
-		border-radius: 100%;
-		background-color: white;
-	}
-
-	.skill-icon:hover {
-		transform: scale(1.1);
 	}
 </style>
