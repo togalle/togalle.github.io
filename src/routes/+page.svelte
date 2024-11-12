@@ -50,22 +50,10 @@
 						title="Svelte"
 					/>
 					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
-						alt="Angular Icon"
-						class="skill-icon"
-						title="Angular"
-					/>
-					<img
 						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
 						alt="Node.js Icon"
 						class="skill-icon"
 						title="Node.js"
-					/>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastify/fastify-original.svg"
-						alt="Fastify Icon"
-						class="skill-icon"
-						title="Fastify"
 					/>
 					<img
 						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
@@ -86,29 +74,10 @@
 						title="AWS"
 					/>
 					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg"
-						alt="Ansible Icon"
-						class="skill-icon"
-						title="Ansible"
-					/>
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"
-						alt="Terraform Icon"
-						class="skill-icon"
-						title="Terraform"
-					/>
-					<img
 						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
 						alt="Tensorflow Icon"
 						class="skill-icon"
 						title="Tensorflow"
-					/>
-					<!-- github -->
-					<img
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-						alt="Github Icon"
-						class="skill-icon"
-						title="Github"
 					/>
 					<img
 						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
