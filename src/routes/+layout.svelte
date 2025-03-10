@@ -55,17 +55,6 @@
 	</nav>
 
 	<slot />
-
-	<div id="climate-clock-wrapper">
-		<iframe
-			src="https://climateclock.world/widget-v2"
-			width="100%"
-			height="140"
-			frameborder="0"
-			scrolling="no"
-			title="Climate Clock"
-		></iframe>
-	</div>
 </div>
 
 <style>
@@ -123,13 +112,6 @@
 		transition:
 			background-color 0.2s ease-in-out,
 			transform 0.2s ease-in-out;
-	}
-
-	#climate-clock-wrapper {
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		right: 0;
 	}
 
 	@media (max-width: 991px) {
