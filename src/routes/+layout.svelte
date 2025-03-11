@@ -41,7 +41,7 @@
 			{#each pages as page}
 				<li>
 					{#if page === 'Resume'}
-						<a on:click={openCv} href="/">{page}</a>
+						<a href="https://docs.google.com/document/d/1UEkzEmfhBgyR0R5oyC_LgFkGYl_FA5r8rs-06yDgM3U/edit?usp=sharing" target="_blank">{page}</a>
 					{:else if page === 'Gallery'}
 						<a href="https://tayku.carrd.co/#art" target="_blank">Gallery</a>
 					{:else if page === 'Portfolio'}
