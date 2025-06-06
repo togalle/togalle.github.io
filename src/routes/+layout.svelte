@@ -58,6 +58,9 @@
 </div>
 
 <style>
+	:root {
+color-scheme: light dark;
+}
 	:global(body) {
 		margin: 0;
 		padding: 0;
@@ -66,7 +69,7 @@
 		font-weight: normal;
 		font-size: calc(15px + 0.390625vw);
 		background-color: #8e7ab5;
-		background-image: linear-gradient(to bottom right, #55c364, #0060ae);
+background-image: linear-gradient(to bottom right, light-dark(#55c364, #000000), light-dark(#0060ae, #01314F));
 	}
 
 	:global(a) {
