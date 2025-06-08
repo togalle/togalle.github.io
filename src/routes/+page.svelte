@@ -29,6 +29,8 @@
 						>As you can see,
 					</span>I'm not afraid to get my hands dirty<span class="mobile-invisible">—literally</span
 					>! Feel free to reach out if you'd like to connect.
+					<br/>
+					Oh, I use arch btw.
 				</p>
 				<!-- 
 					frontend: react, svelte, angular 
