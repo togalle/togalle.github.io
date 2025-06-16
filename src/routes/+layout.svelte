@@ -69,7 +69,7 @@ color-scheme: light dark;
 		font-weight: normal;
 		font-size: calc(15px + 0.390625vw);
 		background-color: #8e7ab5;
-background-image: linear-gradient(to bottom right, light-dark(#55c364, #000000), light-dark(#0060ae, #01314F));
+background-image: linear-gradient(to bottom right, light-dark(#55c364, #1E2326), light-dark(#0060ae, #3C4841));
 	}
 
 	:global(a) {

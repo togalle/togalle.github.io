@@ -231,7 +231,7 @@
 		border-radius: 5px;
 		transition: background-color 0.3s ease;
 		font-weight: bold;
-		background-color: light-dark(#3fc3a4, #2b627e);
+		background-color: light-dark(#3fc3a4, #83C092);
 	}
 
 	.button:hover {
