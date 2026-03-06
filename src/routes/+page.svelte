@@ -94,7 +94,7 @@
 					/>
 				</svg> LinkedIn</a
 			>
-			<a href={`mailto:${'tomasgalle2002@gmail.com'}`} target="_blank" class="button"
+			<a href={`mailto:${'togalle@proton.me'}`} target="_blank" class="button"
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="16"
