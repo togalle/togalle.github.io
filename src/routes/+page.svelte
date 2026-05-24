@@ -228,7 +228,7 @@
 		margin: 10px 0;
 		color: white;
 		text-decoration: none;
-		border-radius: 5px;
+		border-radius: 100px;
 		transition: background-color 0.3s ease;
 		font-weight: bold;
 		background-color: light-dark(#3fc3a4, #83C092);
