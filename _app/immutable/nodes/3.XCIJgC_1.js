@@ -1,1 +1,0 @@
-import{_ as e,h as t}from"../chunks/D3tvXMWS.js";import"../chunks/xihTtKlq.js";import"../chunks/B-pZPIGL.js";var n=e(`<div class="svelte-u4k2t">Blog: coming soon</div>`);function r(e){var r=n();t(e,r)}export{r as component};
